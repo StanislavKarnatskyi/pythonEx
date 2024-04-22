@@ -1,11 +1,11 @@
+from dotenv import load_dotenv
 import requests
+import os
 
+load_dotenv("testing_apy_key.env")
+api_key = os.getenv("API")
 city = input("City: ")
-
-
-api_key = ''
 base_url = 'https://api.openweathermap.org/data/2.5/weather?'
-
 response = requests.get(base_url + 'q=' + city + '&appid=' + api_key)
 
 kelvin = response.json()['main']['temp']
