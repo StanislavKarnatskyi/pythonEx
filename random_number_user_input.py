@@ -14,7 +14,7 @@ while True:
 
 
 while True:
-    userInMax = input("nter the maximum number: ")
+    userInMax = input("Enter the maximum number: ")
     if userInMax.isdigit():
         userInMax = int(userInMax)
         if userInMax > userInMin:
