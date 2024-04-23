@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import requests
 import os
 
-load_dotenv("testing_apy_key.env")
+load_dotenv("testing_api_key.env")
 api_key = os.getenv("API")
 city = input("City: ")
 base_url = 'https://api.openweathermap.org/data/2.5/weather?'
