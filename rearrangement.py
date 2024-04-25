@@ -5,7 +5,6 @@ list_container = []
 list_sliced = []
 
 to_list = list(word)
-print(to_list)
 
 for i in range(len(word)):
     to_list = [to_list[-1]] + to_list[:-1]
@@ -15,5 +14,4 @@ for i in range(len(word)):
         temp = to_list[0] + "".join(list_sliced)
         list_container += [temp]
     list_container.append("".join(to_list))
-
 print(list_container)
